@@ -1,0 +1,90 @@
+body {
+  background-color: #1e1e1e; /* Dark Grey */
+  animation: backgroundPulse 5s infinite;
+}
+
+.container {
+  padding: 100px 500px;
+  text-align: center;
+  /* Slightly lighter dark grey */
+}
+
+/* Updated Alert Box Styling */
+.alert-box {
+  margin-top: 20px;
+  padding: 10px; /* Reduced padding */
+  border-radius: 8px;
+  border: 1px solid #555; /* Slightly lighter grey border */
+  background-color: #2d3436; /* Dark background */
+  color: #fff;
+  text-align: left;
+  max-width: 300px; /* Maximum width for the box */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alert-box.success {
+  border-left: 4px solid #00b894; /* Green border for success */
+}
+
+.alert-box.error {
+  border-left: 4px solid #d63031; /* Red border for error */
+}
+
+.alert-box h4 {
+  margin-top: 0;
+  color: #81ecec; /* Light blue heading */
+  font-size: 16px; /* Reduced font size */
+}
+
+.alert-box p {
+  margin: 8px 0 0 0; /* Adjust margin */
+  font-size: 14px; /* Smaller text size */
+}
+
+@keyframes backgroundPulse {
+  0% {
+    background-color: #1e1e1e;
+  }
+  50% {
+    background-color: #252525; /* Slightly lighter dark grey */
+  }
+  100% {
+    background-color: #1e1e1e;
+  }
+}
+
+.input-section,
+.button-group,
+.flip-button {
+  margin-top: 20px;
+}
+
+.heading1 {
+  color: #a29bfe; /* Light Purple */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .container {
+    padding: 80px 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 60px 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 20px;
+  }
+}
